@@ -1,21 +1,21 @@
 package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
 
-import android.content.Intent;
 import android.os.Bundle;
+import androidx.appcompat.widget.Toolbar;
+import android.content.Intent;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class MainActivity extends AppCompatActivity {
+public class DatabaseActivity extends AppCompatActivity {
 
     private Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_database);
         toolbar=findViewById(R.id.myToolBar);
 
         setSupportActionBar(toolbar);
@@ -34,18 +34,16 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.action_home:
-                break;
-            case R.id.action_records:
-                Intent intent = new Intent(this, DatabaseActivity.class);
+                Intent intent = new Intent(this, MainActivity.class);
                 this.startActivity(intent);
                 break;
+            case R.id.action_records:
+                break;
             case R.id.sign_out:
-                return true;
+                break;
             default:
                 return super.onOptionsItemSelected(item);
         }
         return true;
     }
-
-
 }
