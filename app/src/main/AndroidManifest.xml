@@ -13,8 +13,9 @@
 
         <activity android:name=".LoginActivity"></activity>
         <activity android:name=".DatabaseActivity" />
+        <!--
         <activity android:name=".DatabaseActivity"
-            tools:ignore="DuplicateActivity"></activity>
+            tools:ignore="DuplicateActivity"></activity> -->
  master
         <activity android:name=".MainActivity">
             <intent-filter>
