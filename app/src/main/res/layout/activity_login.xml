@@ -6,6 +6,8 @@
     android:layout_height="match_parent"
     tools:context=".LoginActivity">
 
+    <!-- test comment here -->
+
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="314dp"
