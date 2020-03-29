@@ -3,12 +3,15 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:title="Home"
-        android:id="@+id/home"/>
+        android:title="@string/home"
+        android:id="@+id/action_home" />
+    <!--made change here from just home to action_home-->
+
     <item
-        android:title="Drive Records"
-        android:id="@+id/Records" />
+        android:title="@string/drive_records"
+        android:id="@+id/action_records" />
+
     <item
-        android:title="Sign Out"
+        android:title="@string/sign_out"
         android:id="@+id/sign_out" />
 </menu>

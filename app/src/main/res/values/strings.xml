@@ -1,3 +1,18 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <!-- Menu bar text -->
+    <string name="app_name">Tax E Driver</string>
+    <string name="home">Home</string>
+    <string name="drive_records">Drive Records</string>
+    <string name="sign_out">Sign Out</string>
+
+    <!-- Text for Main activity -->
+    <string name="uber">Uber:</string>
+    <string name="lyft">Lyft:</string>
+    <string name="drive_report_title">Drive Report For:</string>
+
+    <!-- Text for Drive Records Activity -->
+    <string name="day_radio_button">Day</string>
+    <string name="week_radio_button">Week</string>
+    <string name="month_radio_button">Month</string>
+    <string name="done_button">Done</string>
 </resources>

@@ -7,6 +7,54 @@
     tools:context=".MainActivity">
 
    <include
-       layout="@layout/app_bar"/>
+       android:id="@+id/myToolBar"
+       layout="@layout/app_bar" />
+
+   <ImageView
+       android:id="@+id/imageView3"
+       android:layout_width="188dp"
+       android:layout_height="182dp"
+       android:layout_marginStart="111dp"
+       android:layout_marginLeft="111dp"
+       android:layout_marginTop="75dp"
+       android:layout_marginEnd="112dp"
+       android:layout_marginRight="112dp"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.0"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/myToolBar"
+       app:srcCompat="@drawable/mainactivitylogo" />
+
+   <TextView
+       android:id="@+id/textView"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginStart="57dp"
+       android:layout_marginLeft="57dp"
+       android:layout_marginTop="92dp"
+       android:layout_marginEnd="271dp"
+       android:layout_marginRight="271dp"
+       android:text="@string/uber"
+       android:textSize="36sp"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+   <TextView
+       android:id="@+id/textView2"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginStart="63dp"
+       android:layout_marginLeft="63dp"
+       android:layout_marginTop="45dp"
+       android:layout_marginEnd="278dp"
+       android:layout_marginRight="278dp"
+       android:layout_marginBottom="175dp"
+       android:text="@string/lyft"
+       android:textSize="36sp"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/textView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
