@@ -7,6 +7,7 @@ import androidx.appcompat.widget.Toolbar;
 import android.content.Intent;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 public class DatabaseActivity extends AppCompatActivity {
 
@@ -45,5 +46,12 @@ public class DatabaseActivity extends AppCompatActivity {
                 return super.onOptionsItemSelected(item);
         }
         return true;
+    }
+
+    // new method for Done button to return Home on click
+    //   create this method, then go to .xml button attributes, On Click, select this method
+    public void buttonOnClick(View v) {
+        Intent intent = new Intent(this, MainActivity.class);
+        this.startActivity(intent);
     }
 }

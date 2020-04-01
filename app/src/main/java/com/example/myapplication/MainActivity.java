@@ -7,6 +7,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -16,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        toolbar=findViewById(R.id.myToolBar);
+        toolbar = findViewById(R.id.myToolBar);
 
         setSupportActionBar(toolbar);
 
@@ -46,6 +48,27 @@ public class MainActivity extends AppCompatActivity {
         }
         return true;
     }
+
+/*
+    // toggle objects, to return text for now
+    ToggleActivity toggleU = new ToggleActivity("Offline");
+    ToggleActivity toggleL = new ToggleActivity("Online");
+
+    String textUberStatus = toggleU.findUberStatus();
+    String textLyftStatus = toggleL.findLyftStatus();
+*/
+
+/*
+    //@Override
+    private android.widget.TextView findViewbyId(int txt_UberStatus) {
+
+        setContentView(R.layout.activity_main);
+        TextView textView = (TextView) findViewbyId(R.id.txt_UberStatus);
+        textView.setText(toggleU.getUberStatus());
+        return textView;
+    }
+*/
+
 
 
 }

@@ -8,23 +8,27 @@
 
     <!--
         android:id="@+id/include"-->
+
+
     <include
+        android:id="@+id/myToolBar"
+        layout="@layout/app_bar"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="0dp" />
 
-        layout="@layout/app_bar" />
-
-   <TextView
+    <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="33dp"
         android:layout_marginLeft="33dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="12dp"
         android:text="@string/driver_report_for"
         android:textColor="#090909"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/myToolBar" />
 
     <EditText
         android:id="@+id/editfname"
@@ -32,10 +36,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginLeft="32dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="John Smith"
+        android:text="@string/john_smith"
         android:textColor="#4CAF50"
         android:textSize="24sp"
         android:textStyle="bold|italic"
@@ -48,8 +52,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="263dp"
         android:layout_marginLeft="263dp"
-        android:layout_marginTop="500dp"
-        android:text="Exit"
+        android:layout_marginTop="550dp"
+        android:onClick="buttonOnClick"
+        android:text="@string/done"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -59,13 +64,13 @@
         android:layout_height="160dp"
         android:layout_marginStart="50dp"
         android:layout_marginLeft="50dp"
-        android:layout_marginTop="110dp"
+        android:layout_marginTop="12dp"
         android:layout_marginEnd="77dp"
         android:layout_marginRight="77dp"
         android:checkedButton="@id/rbtn_day"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/editfname">
 
         <RadioButton
             android:id="@+id/rbtn_day"
@@ -73,9 +78,9 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="100dp"
             android:layout_marginLeft="100dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="10dp"
             android:checked="false"
-            android:text="day"
+            android:text="@string/day"
             android:textSize="24sp"
             android:textStyle="bold" />
 
@@ -86,7 +91,7 @@
             android:layout_marginStart="100dp"
             android:layout_marginLeft="100dp"
             android:layout_marginTop="10dp"
-            android:text="week"
+            android:text="@string/week"
             android:textSize="24sp"
             android:textStyle="bold" />
 
@@ -97,7 +102,7 @@
             android:layout_marginStart="100dp"
             android:layout_marginLeft="100dp"
             android:layout_marginTop="10dp"
-            android:text="month"
+            android:text="@string/month"
             android:textSize="24sp"
             android:textStyle="bold" />
     </RadioGroup>
@@ -106,10 +111,10 @@
         android:id="@+id/imgV_logo3"
         android:layout_width="128dp"
         android:layout_height="130dp"
-        android:layout_marginStart="75dp"
-        android:layout_marginLeft="75dp"
-        android:layout_marginTop="450dp"
-        android:contentDescription="logo"
+        android:layout_marginStart="72dp"
+        android:layout_marginLeft="72dp"
+        android:layout_marginTop="500dp"
+        android:contentDescription="@string/logo"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logo3" />

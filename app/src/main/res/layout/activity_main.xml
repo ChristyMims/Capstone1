@@ -4,9 +4,49 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:contentDescription="logo"
     tools:context=".MainActivity">
 
    <include
-       layout="@layout/app_bar"/>
+       android:id="@+id/myToolBar"
+       layout="@layout/app_bar"
+       tools:layout_editor_absoluteX="30dp"
+       tools:layout_editor_absoluteY="0dp" />
+
+   <ImageView
+       android:id="@+id/imageView"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="100dp"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/myToolBar"
+       app:srcCompat="@drawable/logo3c" />
+
+   <TextView
+       android:id="@+id/txt_U"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginStart="87dp"
+       android:layout_marginLeft="87dp"
+       android:layout_marginTop="80dp"
+       android:text="Uber"
+       android:textColor="#090909"
+       android:textSize="36sp"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+   <TextView
+       android:id="@+id/txt_L"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginStart="87dp"
+       android:layout_marginLeft="87dp"
+       android:layout_marginTop="40dp"
+       android:text="Lyft"
+       android:textColor="#090909"
+       android:textSize="36sp"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/txt_U" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -3,4 +3,11 @@
     <string name="home">Home</string>
     <string name="drive_records">Drive Records</string>
     <string name="sign_out">Sign Out</string>
+    <string name="driver_report_for">Driver Report for</string>
+    <string name="john_smith">John Smith</string>
+    <string name="done">DONE</string>
+    <string name="day">day</string>
+    <string name="week">week</string>
+    <string name="month">month</string>
+    <string name="logo">logo</string>
 </resources>
