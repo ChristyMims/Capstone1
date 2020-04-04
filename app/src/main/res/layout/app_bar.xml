@@ -4,9 +4,11 @@
     android:id="@+id/myToolBar"
     android:layout_width="match_parent"
     android:layout_height="?attr/actionBarSize"
-    android:background="@color/colorAccent"
+    android:background="#C9D7ED"
     android:theme="@style/ThemeOverlay.AppCompat.Dark"
 
-    app:logo="@drawable/logo1d">
+    app:logo="@drawable/logo1c"
+    app:titleMargin="4dp"
+    app:titleTextColor="#C9D7ED">
 
 </androidx.appcompat.widget.Toolbar>

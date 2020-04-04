@@ -2,7 +2,7 @@ package com.example.myapplication;
 
 // placeholder class for toggle
 public class ToggleActivity{
-/*
+
     // dummy variable status (online/offline)
     private String statusU;
     private String statusL;
@@ -49,5 +49,4 @@ public class ToggleActivity{
         return statusL;
     }  // end findLyftStatus
 
- */
 }

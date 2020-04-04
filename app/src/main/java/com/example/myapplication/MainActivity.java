@@ -14,13 +14,38 @@ public class MainActivity extends AppCompatActivity {
 
     private Toolbar toolbar;
 
+
+    // toggle objects, to return text for now
+    ToggleActivity toggleU = new ToggleActivity("Offline");
+    ToggleActivity toggleL = new ToggleActivity("Online");
+
+    //String textUberStatus = toggleU.findUberStatus();
+    //String textLyftStatus = toggleL.findLyftStatus();
+
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        toolbar = findViewById(R.id.myToolBar);
 
+
+        // textview - retrieval of placeholder text from Toggle objects
+        // Uber
+        setContentView(R.layout.activity_main);
+        TextView textView = (TextView) findViewById(R.id.txt_UberStatus);
+        textView.setText(toggleU.findUberStatus());
+        // lyft
+        TextView textView2 = (TextView) findViewById(R.id.txt_LyftStatus);
+        textView2.setText(toggleL.findLyftStatus());
+
+
+        // toolbar/menu options display
+        toolbar = findViewById(R.id.myToolBar);
         setSupportActionBar(toolbar);
+
+
 
     }
 
@@ -48,27 +73,6 @@ public class MainActivity extends AppCompatActivity {
         }
         return true;
     }
-
-/*
-    // toggle objects, to return text for now
-    ToggleActivity toggleU = new ToggleActivity("Offline");
-    ToggleActivity toggleL = new ToggleActivity("Online");
-
-    String textUberStatus = toggleU.findUberStatus();
-    String textLyftStatus = toggleL.findLyftStatus();
-*/
-
-/*
-    //@Override
-    private android.widget.TextView findViewbyId(int txt_UberStatus) {
-
-        setContentView(R.layout.activity_main);
-        TextView textView = (TextView) findViewbyId(R.id.txt_UberStatus);
-        textView.setText(toggleU.getUberStatus());
-        return textView;
-    }
-*/
-
 
 
 }
