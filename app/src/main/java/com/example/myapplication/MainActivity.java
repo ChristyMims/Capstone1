@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
 
         // textview - retrieval of placeholder text from Toggle objects
         // Uber
-        setContentView(R.layout.activity_main);
+        //setContentView(R.layout.activity_main);
         TextView textView = (TextView) findViewById(R.id.txt_UberStatus);
         textView.setText(toggleU.findUberStatus());
         // lyft

@@ -22,7 +22,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="33dp"
         android:layout_marginLeft="33dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="24dp"
         android:text="@string/driver_report_for"
         android:textColor="#090909"
         android:textSize="18sp"
@@ -32,14 +32,13 @@
 
     <EditText
         android:id="@+id/txt_driverName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
+        android:layout_width="357dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginLeft="33dp"
         android:layout_marginTop="8dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="@string/john_smith"
         android:textColor="#4CAF50"
         android:textSize="24sp"
         android:textStyle="bold|italic"
@@ -60,8 +59,8 @@
 
     <RadioGroup
         android:id="@+id/rg_duration"
-        android:layout_width="284dp"
-        android:layout_height="160dp"
+        android:layout_width="282dp"
+        android:layout_height="144dp"
         android:layout_marginStart="50dp"
         android:layout_marginLeft="50dp"
         android:layout_marginTop="12dp"
@@ -118,5 +117,45 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logo3" />
+
+    <TextView
+        android:id="@+id/txt_drivRecHeader"
+        android:layout_width="360dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Service  Trips   Duration"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.628"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rg_duration" />
+
+    <TextView
+        android:id="@+id/txt_drivRec"
+        android:layout_width="356dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:lines="4"
+        android:maxLines="2"
+        android:minLines="2"
+        android:singleLine="false"
+        android:textColor="#4CAF50"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.564"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_drivRecHeader" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

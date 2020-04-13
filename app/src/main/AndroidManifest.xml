@@ -8,20 +8,25 @@
         android:label="taxEdriver"
         android:roundIcon="@mipmap/ic_launcher1_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">   <!-- internet after AS 9-->
+
+        <activity android:name=".MainActivity" />
+
+            <activity android:name=".DatabaseActivity" >
+                <intent-filter>
+                    <action android:name="android.intent.action.MAIN" />
+
+                    <category android:name="android.intent.category.LAUNCHER" />
+                </intent-filter>
+
+            </activity>
 
         <activity android:name=".LoginActivity" />
-        <activity android:name=".DatabaseActivity" />
 
-        <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
 
-        <!-- All Product Activity -->
+        <!-- All Driver Activity -->
         <activity
             android:name=".RetrieveDriverName"
             android:label="Driver Name" >
@@ -29,7 +34,7 @@
 
     </application>
 
-    <!-- internet permission -->
+    <!-- internet permission, make sure not within <application> -->
     <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>
