@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/txt_try"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".DatabaseActivity">
@@ -67,6 +68,7 @@
         android:layout_marginEnd="77dp"
         android:layout_marginRight="77dp"
         android:checkedButton="@id/rbtn_day"
+        android:onClick="onClickListenerButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_driverName">
@@ -78,7 +80,8 @@
             android:layout_marginStart="100dp"
             android:layout_marginLeft="100dp"
             android:layout_marginTop="10dp"
-            android:checked="false"
+            android:checked="true"
+            android:onClick="onClickListenerButton"
             android:text="@string/day"
             android:textSize="24sp"
             android:textStyle="bold" />
@@ -90,6 +93,7 @@
             android:layout_marginStart="100dp"
             android:layout_marginLeft="100dp"
             android:layout_marginTop="10dp"
+            android:onClick="onClickListenerButton"
             android:text="@string/week"
             android:textSize="24sp"
             android:textStyle="bold" />
@@ -101,6 +105,7 @@
             android:layout_marginStart="100dp"
             android:layout_marginLeft="100dp"
             android:layout_marginTop="10dp"
+            android:onClick="onClickListenerButton"
             android:text="@string/month"
             android:textSize="24sp"
             android:textStyle="bold" />

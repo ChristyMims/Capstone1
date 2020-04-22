@@ -11,26 +11,18 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">   <!-- internet after AS 9-->
 
-        <activity android:name=".MainActivity" />
+        <activity android:name=".MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-            <activity android:name=".DatabaseActivity" >
-                <intent-filter>
-                    <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
 
-                    <category android:name="android.intent.category.LAUNCHER" />
-                </intent-filter>
+        <activity android:name=".DatabaseActivity" />
 
-            </activity>
 
         <activity android:name=".LoginActivity" />
-
-
-
-        <!-- All Driver Activity -->
-        <activity
-            android:name=".RetrieveDriverName"
-            android:label="Driver Name" >
-        </activity>
 
     </application>
 

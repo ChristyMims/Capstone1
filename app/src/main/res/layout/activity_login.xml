@@ -14,16 +14,14 @@
         android:layout_height="113dp"
         android:layout_marginStart="48dp"
         android:layout_marginLeft="48dp"
-        android:layout_marginTop="82dp"
         android:layout_marginEnd="49dp"
         android:layout_marginRight="49dp"
-        android:layout_marginBottom="75dp"
+        android:layout_marginBottom="50dp"
         android:contentDescription="logo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_testserver"
         app:srcCompat="@drawable/logo3" />
 
     <TextView
@@ -80,21 +78,25 @@
 
     <Button
         android:id="@+id/btn_login"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="91dp"
+        android:layout_width="119dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="60dp"
         android:text="Sign In"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edtxt_password" />
 
-    <TextView
-        android:id="@+id/txt_testserver"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:text="Before"
+    <Button
+        android:id="@+id/button2"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="118dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="8dp"
+        android:lines="2"
+        android:maxLines="2"
+        android:text="Not Registered?  Click here."
+        android:textSize="10sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_login" />
