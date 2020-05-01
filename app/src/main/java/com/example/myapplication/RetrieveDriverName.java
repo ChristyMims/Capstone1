@@ -24,30 +24,24 @@ import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
-public class RetrieveDriverName {
+public class RetrieveDriverName<userParam> {
 
-    // Progress Dialog
-    private ProgressDialog pDialog;
+    private String fname;
+    private String lname;
+    private int driverID;
 
-    // Creating JSON Parser object
-    JSONParser jParser = new JSONParser();
+    public int getDriverID() {
+        return driverID;
+    }
 
-    ArrayList<HashMap<String, String>> productsList;
+    public void setDriverID(int driverID) {
+        this.driverID = driverID;
+    }
 
-    // url to get all products list
-    private static String url_all_products = "https://api.androidhive.info/android_connect/get_all_products.php";
 
-    // JSON Node names
-    private static final String TAG_SUCCESS = "success";
-    private static final String TAG_DRIVER = "driver";
-    private static final String TAG_ID = "id";
-    private static final String TAG_FNAME = "fname";
-    private static final String TAG_LNAME = "lname";
-
-    // products JSONArray
-    JSONArray products = null;
 
 
 

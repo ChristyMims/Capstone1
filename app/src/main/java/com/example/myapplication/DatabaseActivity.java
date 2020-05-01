@@ -7,6 +7,7 @@ import android.os.Bundle;
 import androidx.appcompat.widget.Toolbar;
 import android.content.Intent;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -219,8 +220,10 @@ public class DatabaseActivity extends AppCompatActivity {
         // radio button integer right now, have to set text and convert it to string
         // txt_tommy.setText(radioButton.getText());
 
-        // temp toast message
-        Toast.makeText(DatabaseActivity.this, radioButton.getText(), Toast.LENGTH_LONG).show();
+        // temp toast message, gravity is locator for toast message
+        Toast toast = Toast.makeText(DatabaseActivity.this, radioButton.getText(), Toast.LENGTH_LONG);
+        toast.setGravity(Gravity.CENTER_HORIZONTAL | Gravity.CENTER_VERTICAL, 400, 250);
+        toast.show();
 
         // Debug, logcat calls to find value of button id and variable
         //Log.d("Selected Button ID", String.format("value = %d", selectedButton));
